@@ -1,3 +1,5 @@
+import numpy as np
+
 class Enviorment():
     def __init__(self, dimensions, shape):
         """
@@ -6,3 +8,10 @@ class Enviorment():
         """
         assert isinstance(dimensions, str)
         assert isinstance(shape, [tuple, list])
+        self.dimensions= dimensions
+        self.shape= shape
+        self.Enviorment= np.zeros(shape= self.shape)
+        #self maxagents= spaces in an array
+
+    def spawn(self, robot_object):
+        position= rob
